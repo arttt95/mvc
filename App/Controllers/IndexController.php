@@ -14,7 +14,7 @@ class IndexController extends Action {
             'Cama'
         ];
 
-        $this->render('index');
+        $this->render('index', 'layout1');
     }
 
     public function sobreNos() {
@@ -25,7 +25,7 @@ class IndexController extends Action {
             'Video-game'
         ];
 
-        $this->render('sobreNos');
+        $this->render('sobreNos', 'layout1');
     }
 
 }
