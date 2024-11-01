@@ -1,11 +1,32 @@
 <h1>Sobre Nós</h1>
 <hr>
 
+<?php  foreach($this->view->dados as $indice => $info) { ?>
+
+    <h1> <?= $info['titulo'] ?> </h1>
+    <br>
+    <?= $info['descricao'] ?>
+    <hr>
+
+
+<?php } ?>
+
 <?php
+/*
+O trecho acima faz a mesma coisa que o trecho a seguir, porém está organizado dando prioridade para o conteúdo HTML;
 
-foreach($this->view->dados as $indice => $valor) {
-    echo $valor;
+echo '<pre>';
+print_r($this->view->dados);
+echo '</pre>';
+
+
+foreach($this->view->dados as $indice => $info) {
+    
+    echo '<h1>' . $info['titulo'] . '</h1>';
     echo '<br>';
-}
+    echo $info['descricao'];
+    echo '<hr>';
 
+}
+*/
 ?>
